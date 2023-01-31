@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SNOWY BOOKS</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='snowy.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='test.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='try1.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='try2.css')}}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='image/faviconlogo.png')}}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content">
+        <div class="logo"><a href="/snowybook"><img src="{{url_for('static', filename='image/logositepaw.png')}}" height="110px" width="220px"class="logo"></a></div>
+          <ul class="links">
+            <li><a href="/snowybook">Home</a></li>
+            <li><a href="/Login">Login</a></li>
+            
+            <li>
+              <a href="#" class="desktop-link">Category</a>
+              <input type="checkbox" id="show-services">
+              <label for="show-services">Category</label>
+              <ul>
+                <li><a href="/biography">Biographies</a></li>
+                <li><a href="/manga">Comic & mangas</a></li>
+                <li><a href="/drame">Drame</a></li>
+                <li><a href="/novel">novel</a></li>
+                <li><a href="/rommance">Romance</a></li>
+                
+                <li>
+                  <a href="/thriller" class="desktop-link">Thriller</a>
+                  <input type="checkbox" id="show-items">
+                  <label for="show-items">Thriller</label>
+                  <ul>
+                    <li><a href="/mystery">mystery</a></li>
+                    <li><a href="/crime">crime</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="/sciencefiction" class="desktop-link">Sci-Fi & Fantasy</a>
+                  <input type="checkbox" id="show-items">
+                  <label for="show-items">Sci-Fi & Fantasy</label>
+                  <ul>
+                    <li><a href="/action">Action</a></li>
+                    <li><a href="/darkfantasy">Dark Fantasy</a></li>
+                    <li><a href="/commingofage">Coming of Age</a></li>
+                   
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">cart</a></li>
+            
+          </ul>
+        </div>
+        <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+        <form action="#" class="search-box">
+          <input type="text" placeholder="Type Something to Search..." required>
+          <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+        </form>
+      </nav>
+  </div>
+  <!-- home section start -->
+  <section class="home" id="home">
+    <div class="max-width">
+        <div class="home-content">
+           
+            <div class="text-1">Hello, we are </div>
+            <div class="text-2">SNOWY BOOKS</div>
+            <div class="text-3">And we sell <span class="typing"></span></div>
+            
+        </div>
+    </div>
+</section>
+<script 
+type="text/javascript"
+src="{{url_for('static', filename='test.js')}}"
+></script>
+<!--carousel section-->
+<section class="containerr" >
+  
+    <h2> OUR RECOMENDATIONS <span></span></h2>
+    <div id="slide">
+        <div class="itemm">
+            <div class="image">
+                <img src="{{url_for('static', filename='image/verity.jpg')}}">
+            </div>
+            <div class="content">
+                <div class="left">
+                    <h1>Verity</h1>
+                    <div class="des">Lowen Ashleigh is a struggling writer on the brink of financial <br> ruin when she accepts the job offer of a lifetime</div>
+                   
+                </div>
+                <div class="right">
+                    <h2>À propos</h2>
+                    <ul>
+                        <li>
+                            <p>Originally published </p>
+                            <p>December 7, 2018</p>
+                        </li>
+                        <li>
+                            <p>Author</p>
+                            <p>Colleen Hoover</p>
+                        </li>
+                        <li>
+                            <p>Genres</p>
+                            <p>Thriller, Fiction, Romance novel</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+         <div class="itemm">
+            <div class="image">
+                <img src="{{url_for('static', filename='image/fairytale.jpg')}}">
+            </div>
+            <div class="content">
+                <div class="left">
+                    <h1>fairy tale</h1>
+                    <div class="des">17-year-old who inherits keys to a hidden,<br> otherworldly realm, and finds himself <br>leading the battle between forces of good and evil</div>
+                    
+                </div>
+                <div class="right">
+                    <h2>À propos</h2>
+                    <ul>
+                        <li>
+                            <p>Originally published</p>
+                            <p>6 septembre 2022</p>
+                        </li>
+                        <li>
+                            <p>Author</p>
+                            <p>Stephen King</p>
+                        </li>
+                        <li>
+                            <p>Genres</p>
+                            <p>Thriller, Dark fantasy</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+         <div class="itemm">
+            <div class="image">
+                <img src="{{url_for('static', filename='image/boysbiloxi.jpg')}}">
+            </div>
+            <div class="content">
+                <div class="left">
+                    <h1>the boys from<br> biloxi</h1>
+                    <div class="des">two sons of immigrant families who grow up as friends, <br> but ultimately find themselves on opposite sides of the law</div>
+                    
+                </div>
+                <div class="right">
+                    <h2>À propos</h2>
+                    <ul>
+                        <li>
+                            <p>Originally published</p>
+                            <p>October 18, 2022</p>
+                        </li>
+                        <li>
+                            <p>Author</p>
+                            <p> John Grisham</p>
+                        </li>
+                        <li>
+                            <p>Genres</p>
+                            <p> Thriller, Fiction</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="itemm">
+            <div class="image">
+                <img src="{{url_for('static', filename='image/shack.jpg')}}">
+            </div>
+            <div class="content">
+                <div class="left">
+                    <h1>the shack</h1>
+                    <div class="des">Mackenzie Allen Philips' youngest daughter, Missy <br> has been abducted during a family vacation and <br>evidence that she may have been brutally murdered is <br>found in an abandoned shack deep in <br>the Oregon wilderness</div>
+                   
+                </div>
+                <div class="right">
+                    <h2>À propos</h2>
+                    <ul>
+                        <li>
+                            <p>Originally published </p>
+                            <p>3 mars 2017 (États-Unis)</p>
+                        </li>
+                        <li>
+                            <p>Author</p>
+                            <p>Stuart Hazeldine</p>
+                        </li>
+                        <li>
+                            <p>Genres</p>
+                            <p>Drame, Fantasy</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+         <div class="itemm">
+            <div class="image">
+                <img src="{{url_for('static', filename='image/celine.jpg')}}">
+            </div>
+            <div class="content">
+                <div class="left">
+                    <h1>celine journey <br>to the end of<br> the night</h1>
+                    <div class="des">aventures of Ferdinand Bardamu in the World War I,<br> colonial Africa, the United States and the poor suburbs <br>of Paris where he works as a doctor</div>
+                    
+                </div>
+                <div class="right">
+                    <h2>À propos</h2>
+                    <ul>
+                        <li>
+                            <p>Originally published</p>
+                            <p>1932</p>
+                        </li>
+                        <li>
+                            <p>Author</p>
+                            <p>Louis-Ferdinand Céline</p>
+                        </li>
+                        <li>
+                            <p>Genres</p>
+                            <p>Roman, Fiction</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+         <div class="itemm">
+            <div class="image">
+                <img src="{{url_for('static', filename='image/lost.jpg')}}">
+            </div>
+            <div class="content">
+                <div class="left">
+                    <h1>the lost <br>symbol</h1>
+                    <div class="des">deadly race through a real-world labyrinth of codes, <br>secrets, and unseen truths… all under the watchful eye<br>of Brown's most terrifying villain to date</div>
+                    
+                </div>
+                <div class="right">
+                    <h2>À propos</h2>
+                    <ul>
+                        <li>
+                            <p>Originally published</p>
+                            <p>September 15, 2009</p>
+                        </li>
+                        <li>
+                            <p>Author</p>
+                            <p> Dan Brown</p>
+                        </li>
+                        <li>
+                            <p>Genres</p>
+                            <p> Crime, Mystery, Thriller</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="itemm">
+            <div class="image">
+                <img src="{{url_for('static', filename='image/lie.jpg')}}">
+            </div>
+            <div class="content">
+                <div class="left">
+                    <h1>la vie <br>mensongère<br> des adultes</h1>
+                    <div class="des">une adolescente entre douze et seize ans , avec le<br> cortège habituel des cachotteries et des turbulences de <br>la vie.Elle va au delà avec son récit sinueux,<br> tranchant , sans compromis</div>
+                   
+                </div>
+                <div class="right">
+                    <h2>À propos</h2>
+                    <ul>
+                        <li>
+                            <p>Originally published </p>
+                            <p>7 novembre 2019</p>
+                        </li>
+                        <li>
+                            <p>Author</p>
+                            <p> Elena Ferrante</p>
+                        </li>
+                        <li>
+                            <p>Genres</p>
+                            <p>Roman d'apprentissage,<br> Fiction domestique</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+         <div class="itemm">
+            <div class="image">
+                <img src="{{url_for('static', filename='image/wolf.jpg')}}">
+            </div>
+            <div class="content">
+                <div class="left">
+                    <h1>Wolf Totem</h1>
+                    <div class="des">In Native American cultures, animal totems hold the <br>protective powers of the animals they represent.<br> Thus, the wolf totem is a helpful symbol for manifesting <br>more protection, better instincts, <br> and stronger relationships in your life.</div>
+                    
+                </div>
+                <div class="right">
+                    <h2>À propos</h2>
+                    <ul>
+                        <li>
+                            <p>Originally published</p>
+                            <p>April 2004</p>
+                        </li>
+                        <li>
+                            <p>Author</p>
+                            <p>Jiang Rong</p>
+                        </li>
+                        <li>
+                            <p>Genres</p>
+                            <p>Novel, Historical Fiction,<br> Fictional Autobiography</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="directional">
+        <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+        <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+    </div>
+
+
+<script 
+type="text/javascript"
+src="{{url_for('static', filename='try1.js')}}"
+></script>
+</section>
+<!--article-->
+<section class="white">
+    <div class="container">
+        <div class="list">
+            <div class="item">
+                <div class="img">
+                    <img src="{{url_for('static', filename='image/daughter.jpg')}}">
+                </div>
+                <div class="content">
+                    <div class="title">daughter of the moon goddess</div>
+                    
+                    <div class="price">1200DA</div>
+                  <a href="#">  <button class="add">Add to cart</button></a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{{url_for('static', filename='image/verity.jpg')}}">
+                </div>
+                <div class="content">
+                    <div class="title">Verity</div>
+                   
+                    <div class="price">1500DA</div>
+                    <a href="#">  <button class="add">Add to cart</button></a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{{url_for('static', filename='image/shadow.jpg')}}">
+                </div>
+                <div class="content">
+                    <div class="title">SHADOW ME</div>
+                   
+                    <div class="price">1300DA</div>
+                    <a href="#">  <button class="add">Add to cart</button></a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{{url_for('static', filename='image/fairytale.jpg')}}">
+                </div>
+                <div class="content">
+                    <div class="title">fairy tale</div>
+                   
+                    <div class="price">1250DA</div>
+                    <a href="#">  <button class="add">Add to cart</button></a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{{url_for('static', filename='image/skyhouse.jpg')}}">
+                </div>
+                <div class="content">
+                    <div class="title">House of Sky and Breath</div>
+                    
+                    <div class="price">1700DA</div>
+                    <a href="#">  <button class="add">Add to cart</button></a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{{url_for('static', filename='image/boysbiloxi.jpg')}}">
+                </div>
+                <div class="content">
+                    <div class="title">Boys from biloxi</div>
+                    
+                    <div class="price">1400DA</div>
+                    <a href="#">  <button class="add">Add to cart</button></a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{{url_for('static', filename='image/keleana.jpg')}}">
+                </div>
+                <div class="content">
+                    <div class="title">keleana</div>
+                    
+                    <div class="price">1650DA</div>
+                    <a href="#">  <button class="add">Add to cart</button></a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{{url_for('static', filename='image/shack.jpg')}}">
+                </div>
+                <div class="content">
+                    <div class="title">The shack</div>
+                    
+                    <div class="price">1100DA</div>
+                    <a href="#">  <button class="add">Add to cart</button></a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{{url_for('static', filename='image/sunheart.jpg')}}">
+                </div>
+                <div class="content">
+                    <div class="title">heart of the sun warrior</div>
+                    
+                    <div class="price">2200DA</div>
+                    <a href="#">  <button class="add">Add to cart</button></a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{{url_for('static', filename='image/kingdom.jpg')}}">
+                </div>
+                <div class="content">
+                    <div class="title">This Woven Kingdom</div>
+                    
+                    <div class="price">2000DA</div>
+                    <a href="#">  <button class="add">Add to cart</button></a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{{url_for('static', filename='image/celine.jpg')}}">
+                </div>
+                <div class="content">
+                    <div class="title">celine journey to the end of the night</div>
+                 
+                    <div class="price">950DA</div>
+                    <a href="#">  <button class="add">Add to cart</button></a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{{url_for('static', filename='image/twistedlove.jpg')}}">
+                </div>
+                <div class="content">
+                    <div class="title">Twisted Love</div>
+                    
+                    <div class="price">1500DA</div>
+                    <a href="#">  <button class="add">Add to cart</button></a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{{url_for('static', filename='image/lost.jpg')}}">
+                </div>
+                <div class="content">
+                    <div class="title">Lost Symbol</div>
+                    
+                    <div class="price">1450DA</div>
+                    <a href="#">  <button class="add">Add to cart</button></a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{{url_for('static', filename='image/slammed.jpg')}}">
+                </div>
+                <div class="content">
+                    <div class="title">SLAMMED</div>
+                  
+                    <div class="price">1500DA</div>
+                    <a href="#">  <button class="add">Add to cart</button></a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{{url_for('static', filename='image/lie.jpg')}}">
+                </div>
+                <div class="content">
+                    <div class="title">La Vie mensongère des adultes</div>
+                    
+                    <div class="price">1600DA</div>
+                    <a href="#">  <button class="add">Add to cart</button></a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{{url_for('static', filename='image/firepray.jpg')}}">
+                </div>
+                <div class="content">
+                    <div class="title">prairie fire</div>
+                    
+                    <div class="price">1700DA</div>
+                    <a href="#">  <button class="add">Add to cart</button></a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{{url_for('static', filename='image/onepiece.jpg')}}">
+                </div>
+                <div class="content">
+                    <div class="title">One Piece-Tome 103</div>
+                    
+                    <div class="price">2300DA</div>
+                    <a href="#">  <button class="add">Add to cart</button></a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{{url_for('static', filename='image/binti.jpg')}}">
+                </div>
+                <div class="content">
+                    <div class="title">BINTI</div>
+                  
+                    <div class="price">1500DA</div>
+                    <a href="#">  <button class="add">Add to cart</button></a>
+                </div>
+            </div>
+
+
+        </div>
+        <ul class="listPage">
+           
+        </ul>
+    </div>
+    
+    <script 
+type="text/javascript"
+src="{{url_for('static', filename='try2.js')}}"
+></script>
+</section>
+</body>
+</html>

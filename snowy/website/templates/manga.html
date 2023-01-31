@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{url_for('static', filename='biography.css')}}">
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='image/faviconlogo.png')}}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+      </head>
+        <title>comic & Manga</title>
+    </head>
+    
+<body>
+    <div class="wrapper">
+      <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content">
+        <div class="logo"><a href="/snowybook"><img src="{{url_for('static', filename='image/logositepaw.png')}}" height="110px" width="220px"class="logo"></a></div>
+          <ul class="links">
+            <li><a href="/snowybook">Home</a></li>
+            <li><a href="/Login">Login</a></li>
+            
+            <li>
+              <a href="#" class="desktop-link">Category</a>
+              <input type="checkbox" id="show-services">
+              <label for="show-services">Category</label>
+              <ul>
+                <li><a href="/biography">Biographies</a></li>
+                <li><a href="/manga">Comic & mangas</a></li>
+                <li><a href="/drame">Drame</a></li>
+                <li><a href="/novel">novel</a></li>
+                <li><a href="/rommance">Romance</a></li>
+                
+                <li>
+                  <a href="/thriller" class="desktop-link">Thriller</a>
+                  <input type="checkbox" id="show-items">
+                  <label for="show-items">Thriller</label>
+                  <ul>
+                    <li><a href="/mystery">mystery</a></li>
+                    <li><a href="/crime">crime</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="/sciencefiction" class="desktop-link">Sci-Fi & Fantasy</a>
+                  <input type="checkbox" id="show-items">
+                  <label for="show-items">Sci-Fi & Fantasy</label>
+                  <ul>
+                    <li><a href="/action">Action</a></li>
+                    <li><a href="/darkfantasy">Dark Fantasy</a></li>
+                    <li><a href="/commingofage">Coming of Age</a></li>
+                   
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">cart</a></li>
+            
+          </ul>
+        </div>
+        <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+        <form action="#" class="search-box">
+          <input type="text" placeholder="Type Something to Search..." required>
+          <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+        </form>
+      </nav>
+      </div>
+      <section class="white">
+        <div class="container">
+            <h2 style="color: gold;text-align: center;font: bold;font-family: Georgia, 'Times New Roman', Times, serif;">Comics & Manga</h2>
+            <div class="list">
+         
+    
+                <div class="item">
+                    <div class="img">
+                        <img src="{{url_for('static', filename='image/onepiece.jpg')}}">
+                    </div>
+                    <div class="content">
+                        <div class="title">One Piece-Tome 103</div>
+                        
+                        <div class="price">2300DA</div>
+                        <a href="#">  <button class="add">Add to cart</button></a>
+                    </div>
+                </div>
+    
+            
+    
+            </div>
+            <ul class="listPage">
+               
+            </ul>
+        </div>
+        
+        
+    </section>
+</body>
+</html>

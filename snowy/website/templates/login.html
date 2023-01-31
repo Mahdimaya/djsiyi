@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <!-- <title>Neumorphism Login Form UI | CodingNepal</title> -->
+      <link rel="stylesheet" href="{{url_for('static', filename='login.css')}}">
+      <link rel="stylesheet" href="{{url_for('static', filename='nav.css')}}">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+<body>
+   <section> 
+      <div class="wrapper">
+         <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content">
+            <div class="logo"><a href="/snowybook"><img src="{{url_for('static', filename='image/logositepaw.png')}}" height="110px" width="220px"class="logo"></a></div>
+              <ul class="links">
+                <li><a href="/snowybook">Home</a></li>
+                <li><a href="/Login">Login</a></li>
+                
+                <li>
+                  <a href="#" class="desktop-link">Category</a>
+                  <input type="checkbox" id="show-services">
+                  <label for="show-services">Category</label>
+                  <ul>
+                    <li><a href="/biography">Biographies</a></li>
+                    <li><a href="/manga">Comic & mangas</a></li>
+                    <li><a href="/drame">Drame</a></li>
+                    <li><a href="/novel">novel</a></li>
+                    <li><a href="/rommance">Romance</a></li>
+                    
+                    <li>
+                      <a href="/thriller" class="desktop-link">Thriller</a>
+                      <input type="checkbox" id="show-items">
+                      <label for="show-items">Thriller</label>
+                      <ul>
+                        <li><a href="/mystery">mystery</a></li>
+                        <li><a href="/crime">crime</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="/sciencefiction" class="desktop-link">Sci-Fi & Fantasy</a>
+                      <input type="checkbox" id="show-items">
+                      <label for="show-items">Sci-Fi & Fantasy</label>
+                      <ul>
+                        <li><a href="/action">Action</a></li>
+                        <li><a href="/darkfantasy">Dark Fantasy</a></li>
+                        <li><a href="/commingofage">Coming of Age</a></li>
+                       
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#">cart</a></li>
+                
+              </ul>
+            </div>
+            <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+            <form action="#" class="search-box">
+              <input type="text" placeholder="Type Something to Search..." required>
+              <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+            </form>
+          </nav>
+       </div>
+      </section>
+      <div class="contentt">
+         <div class="text">
+            Login Form
+         </div>
+         <form action="#">
+            <div class="field">
+               <input type="text" required>
+               <span class="fas fa-user"></span>
+               <label>Email or Phone</label>
+            </div>
+            <div class="field">
+               <input type="password" required>
+               <span class="fas fa-lock"></span>
+               <label>Password</label>
+            </div>
+            <div class="forgot-pass">
+               <a href="#">Forgot Password?</a>
+            </div>
+            <button>Sign in</button>
+            <div class="sign-up">
+               Not a member?
+               <a href="/sign-up">signup now</a>
+            </div>
+         </form>
+      </div>
+   </body>
+</html>
