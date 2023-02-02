@@ -1,8 +1,9 @@
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
+import sqlalchemy
 from os import path
 
-db = SQLAlchemy()
+db = sqlalchemy()
+
 DB_NAME = "database.db"
 
 def create_app():
@@ -17,7 +18,7 @@ def create_app():
   app.register_blueprint(views, url_prefix='/')
   app.register_blueprint(auth, url_prefix='/')
 
-  import .models import Utilisateurs
+  from .models import Utilisateurs
 
   create_database(app)
   
